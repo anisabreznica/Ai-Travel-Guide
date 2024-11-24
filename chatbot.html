@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chathura:wght@100;300;400;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <title>Ai Travel Guide</title>
+  </head>
+  <body class="chatbot">
+
+    <header>
+        <h2 class="logo">AI TRAVEL GUIDE</h2>
+        <nav class="navigator">
+            <a href="index.html">Home</a>
+            <a href="chatbot.html">ChatBot</a>
+            
+        </nav>
+    </header>
+
+    <div class="container">
+      <h1>AI travel Guide</h1>
+      <form id="travel-advise">
+        <input
+          type="text"
+          class="finder"
+          placeholder="Add the desired location (city or country)"
+          autofocus
+          required
+          autocomplete="off"
+          id="user-input"
+        />
+        <input type="submit" id="form-button" />
+      </form>
+    </div>
+    <div class="output hidden" id="result"></div>
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

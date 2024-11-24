@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #92d8da;
+    min-height: 100vh;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2em;
+    color: rgb(75, 132, 193);
+    pointer-events: none;
+}
+
+.navigator {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigator a {
+    text-decoration: none;
+    color: rgb(75, 132, 193);
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.navigator a:hover, .navigator a.active {
+    background: rgb(75, 132, 193);
+    color: aliceblue;
+}
+
+.home{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text{
+    position: absolute;
+    font-size: 4em;
+    color: #fff;
+    text-shadow: 3px 3px 6px rgb(58, 71, 255);
+}
+
+
+.chatbot{
+    background-color: #112338f0;
+}
+
+h1{
+    text-align: center;
+    font-size: 5em;
+    margin: 0px;
+    font-family: "Chathura", sans-serif;
+}
+
+.container{
+    max-width: 600px;
+    display: block;
+    margin: 0px auto;
+    margin-top: 120px;
+    background-color: rgb(149, 195, 255);
+    padding: 20px;
+    border-radius: 15px;
+    font-family: "Chathura", sans-serif;
+}
+
+.output{
+    max-width: 600px;
+    height: fit-content;
+    display: block;
+    margin: 0px auto;
+    margin-top: 20px;
+    background-color: rgba(161, 227, 255, 0.7);
+    padding: 15px;
+    border-radius: 0px 15px 15px 0px;
+    border-left: 3px #333 solid;
+    font-family: "Chathura", sans-serif;
+    font-size: 2.3em;
+    line-height: 30px;
+}
+
+.finder{
+    width: 70%;
+    color: #1f1e1e;
+    background-color: #e6d3a7;
+    font-family: "Chathura", sans-serif;
+    font-size: 2em;
+    border: none;
+}
+
+#form-button{
+    width: 20%;
+    color: #e6d3a7;
+    background-color: #1610b6;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: "Chathura", sans-serif;
+    line-height: 15px;
+    font-size: 2em;
+    border: none;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.blink_me{
+    animation: blinker 1s linear infinite;
+}
+  
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+
+    .navigator {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    #text{
+        font-size: 40px;
+    }
+}
